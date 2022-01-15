@@ -10,8 +10,7 @@
  */
 class RangeSensorCore {
 private:
-	uint32_t _base_addr; // core base address
-	uint32_t _data_arr[PULSE_CNT];
+	uint32_t _base_addr; // core base address	
 public:
 	/**
 	 * Register map
@@ -22,6 +21,7 @@ public:
 		FIFO_STATUS_REG = 2,
 		REQ_CNT_REG = 3
 	};
+	uint32_t _data_arr[PULSE_CNT];
 	/**
 	 * Constructor
 	 * @param base_addr slot base address
